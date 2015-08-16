@@ -10,6 +10,22 @@ namespace Pillars
     {
         static void Main(string[] args)
         {
+            int y = int.MaxValue;
+            int i = unchecked(int.MaxValue + 1);
+            /* event and Delegate Example
+             * 
+            var deleg = new EventHandling.ClassWithEventHandler();
+            deleg.SomeEvent += new EventHandling.ClassWithEventHandler.MyEventHandler(EventHandling.ClassWithEventHandler.DoSomething);
+            deleg.SomeEvent = new EventHandling.ClassWithEventHandler.MyEventHandler(EventHandling.ClassWithEventHandler.DoAnotherThing);
+            deleg.List += EventHandling.ClassWithEventHandler.DoSomething;
+            deleg.List += EventHandling.ClassWithEventHandler.DoAnotherThing;
+            deleg.List = new EventHandling.ClassWithEventHandler.MyDelegate(EventHandling.ClassWithEventHandler.DoSomething);
+            
+            while (Console.ReadLine().Equals("a")) 
+            {
+                deleg.List(1);
+            }
+             */
             /*
             int[][] input = new int[10][10];
 
@@ -40,7 +56,8 @@ namespace Pillars
         }
         private string First;
         private string Last;
-        public void DoSomething() => Console.WriteLine("I'm doing something");
-        public string Name => First + "" + Last;
+        // Only works on the latest .Net Framework
+        //public void DoSomething() => Console.WriteLine("I'm doing something");
+        //public string Name => First + "" + Last;
     }
 }

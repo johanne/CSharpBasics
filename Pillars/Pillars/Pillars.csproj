@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DataPassing\ReferenceType.cs" />
     <Compile Include="DataPassing\ValueTypes.cs" />
+    <Compile Include="EventHandling\ClassWithEventHandler.cs" />
     <Compile Include="Interfaces\ISimpleInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

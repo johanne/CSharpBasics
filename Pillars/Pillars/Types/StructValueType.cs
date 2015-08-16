@@ -11,7 +11,7 @@ namespace Pillars.Types
     struct StructValueType : Interfaces.ISimpleInterface
     {
         // In this example, this 
-        public abstract void DoSomething();
+        public void DoSomething() { }
     }
 
     /*
